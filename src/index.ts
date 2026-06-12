@@ -1,2 +1,2 @@
-export { add } from "./math";
+export { add, multiply } from "./math";
 export { greet } from "./greet";
