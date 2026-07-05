@@ -1,3 +1,6 @@
 export function greet(name: string): string {
-  return `Hi, ${name}!`;
+  if (!name || name.trim() === '') {
+    throw new Error('Name cannot be empty');
+  }
+  return `Hi, ${name.trim()}!`;
 }
